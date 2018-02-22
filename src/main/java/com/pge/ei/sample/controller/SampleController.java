@@ -21,5 +21,4 @@ private static final Logger LOGGER = Logger.getLogger(SampleController.class);
 		LOGGER.info("Calling sample service...");
 		sampleService.sampleMethod();
 	}
-
 }
