@@ -15,7 +15,7 @@ public class SwaggerConfig {
     public Docket productApi() {
         return new Docket(DocumentationType.SWAGGER_2)
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("guru.springframework.controllers"))
+                .apis(RequestHandlerSelectors.basePackage("com.pge.ei.sample.controller"))
                 .paths(regex("/sample.*"))
                 .build();               
     }
