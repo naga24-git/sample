@@ -28,6 +28,7 @@
 		<aspectj.version>1.7.4</aspectj.version>
 		<jacoco.version>0.7.5.201505241946</jacoco.version>
 		<junit.version>4.12</junit.version>
+		<spring-framework.version>4.0.2.RELEASE</spring-framework.version>
 	</properties>
 
 	<dependencies>
@@ -94,13 +95,13 @@
 		<dependency>
 			<groupId>org.slf4j</groupId>
 			<artifactId>slf4j-api</artifactId>
-			<version>${slf4j.version}</version>
+	<!-- 	<version>${slf4j.version}</version> -->	
 			<scope>compile</scope>
 		</dependency>
 		<dependency>
 			<groupId>ch.qos.logback</groupId>
 			<artifactId>logback-classic</artifactId>
-			<version>${logback.version}</version>
+			<!--<version>${logback.version}</version> -->	
 			<scope>runtime</scope>
 		</dependency>
 
@@ -108,13 +109,13 @@
 		<dependency>
 			<groupId>org.aspectj</groupId>
 			<artifactId>aspectjrt</artifactId>
-			<version>${aspectj.version}</version>
+			<!--<version>${aspectj.version}</version> -->	
 			<scope>runtime</scope>
 		</dependency>
 		<dependency>
 			<groupId>org.aspectj</groupId>
 			<artifactId>aspectjtools</artifactId>
-			<version>${aspectj.version}</version>
+			<!--<version>${aspectj.version}</version> -->	
 		</dependency>
 	</dependencies>
 

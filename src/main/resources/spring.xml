@@ -14,7 +14,7 @@
 </bean>
 
 <!-- Configure EmployeeService bean -->
-<bean name="employeeService" class="com.pge.ei.sample.service.EmployeeService">
+<bean name="employeeService" class="com.pge.ei.sample.service.EmployeeAOP">
 	<property name="employee" ref="employee"></property>
 </bean>
 
