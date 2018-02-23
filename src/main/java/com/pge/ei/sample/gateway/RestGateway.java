@@ -4,7 +4,6 @@ import org.apache.http.conn.ssl.NoopHostnameVerifier;
 import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClients;
 import org.apache.log4j.Logger;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpMethod;
@@ -20,10 +19,10 @@ import com.google.gson.Gson;
 @Service
 public class RestGateway {
 
-	@Value("${userName}")
+	//@Value("${userName}")
 	private String userName;
 
-	@Value("${password}")
+	//@Value("${password}")
 	private String password;
 
 	private static final Logger LOGGER = Logger.getLogger(RestGateway.class);

@@ -1,7 +1,6 @@
 package com.pge.ei.sample.gateway;
 
 import org.apache.log4j.Logger;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.oxm.jaxb.Jaxb2Marshaller;
 import org.springframework.stereotype.Service;
 import org.springframework.ws.client.core.WebServiceTemplate;
@@ -12,10 +11,10 @@ public class SoapGateway {
 
 	private static final Logger LOGGER = Logger.getLogger(SoapGateway.class);
 
-	@Value("${baseURI}")
+	//@Value("${baseURI}")
 	private String baseURI;
 	
-	@Value("${serviceURI}")
+	//@Value("${serviceURI}")
 	private String serviceURI;
 
 	private WebServiceTemplate getServiceTemplate() {
