@@ -2,9 +2,6 @@
 
 #added by khadar
 
-<<<<<<< HEAD
-second commit from branch.
-=======
 second commit from branch.
 
 Chitti Joined the Sample Repository :)
