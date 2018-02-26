@@ -4,6 +4,7 @@ import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.pge.ei.sample.service.SampleService;
@@ -24,4 +25,13 @@ private static final Logger LOGGER = Logger.getLogger(SampleController.class);
 		LOGGER.info("Calling sample service...");
 		sampleService.sampleMethod();
 	}
+	
+	@ApiOperation(value = "Sample Controller")
+	@RequestMapping(method = RequestMethod.GET, value = "/sampleException")
+	public void sampleException(@RequestParam(value = "name") String name) {
+		LOGGER.info("Calling sample exception...");
+		sampleService.sampleException(name);
+	}
+	
+	
 }

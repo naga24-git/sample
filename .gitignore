@@ -22,6 +22,10 @@ nbbuild/
 dist/
 nbdist/
 .nb-gradle/
+<<<<<<< HEAD
 /.metadata/
 
 /.metadata/
+=======
+src/main/java/com/pge/ei/sample/SampleApplication.java
+>>>>>>> 77189353f5c2491e1f27dfa91214ceebca122403
