@@ -4,6 +4,7 @@ import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.pge.ei.sample.kafka.KafkaProducer;
@@ -35,5 +36,11 @@ public class SampleController {
 		kafkaProducer.send("Hello World KAFKA");
 		LOGGER.info("After Calling sendMessage...");
 	}
-
+	
+	@ApiOperation(value = "Sample Controller")
+	@RequestMapping(method = RequestMethod.GET, value = "/sampleException")
+	public void sampleException(@RequestParam(value = "name") String name) {
+		LOGGER.info("Calling sample exception...");
+		sampleService.sampleException(name);
+	}
 }
